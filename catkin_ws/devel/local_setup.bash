@@ -1,0 +1,1 @@
+/home/chris/school/ownProjects/gazebo_with_thor/Gazebo/catkin_ws/devel/.private/catkin_tools_prebuild/local_setup.bash

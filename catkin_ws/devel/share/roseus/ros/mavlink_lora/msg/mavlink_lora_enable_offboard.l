@@ -1,0 +1,1 @@
+/home/chris/school/ownProjects/gazebo_with_thor/Gazebo/catkin_ws/devel/.private/mavlink_lora/share/roseus/ros/mavlink_lora/msg/mavlink_lora_enable_offboard.l
