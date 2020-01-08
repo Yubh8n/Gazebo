@@ -2,15 +2,11 @@ git clone git@github.com:Yubh8n/Gazebo.git
 
 pip install jinja2 catkin_pkg pyyaml empy toml numpy
 
-cd Gazebo
-
 git submodule init
 
 git submodule update
 
 cd Firmware/
-
-
 
 source ~/catkin_ws/devel/setup.bash
 source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/posix_sitl_default
