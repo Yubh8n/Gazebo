@@ -1,5 +1,7 @@
 git clone git@github.com:Yubh8n/Gazebo.git
 
+pip install jinja2 catkin_pkg pyyaml empy toml numpy
+
 cd Gazebo
 
 git submodule init
@@ -17,5 +19,4 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
 
 roslaunch px4 posix_sitl.launch
 
-pip install jinja2 catkin_pkg pyyaml empy toml numpy
 
