@@ -43,6 +43,9 @@ socat -d udp4-listen:14540 open:/tmp/ttyV5,raw,nonblock,waitlock=/tmp/s0.locak,e
 roslaunch px4 posix_sitl.launch
 ```
 
+
+Building and starting mavlink lora.
+
 ```
 cd ../catkin_ws/
 ```
