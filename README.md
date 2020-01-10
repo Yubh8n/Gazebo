@@ -1,7 +1,7 @@
 Installation guide:
 
 ```
-git clone git@github.com:Yubh8n/Gazebo.git
+git clone https://github.com/Yubh8n/Gazebo.git
 ```
 
 ```
