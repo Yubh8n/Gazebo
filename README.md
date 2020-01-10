@@ -44,10 +44,11 @@ roslaunch px4 posix_sitl.launch
 ```
 
 
+In a new terminal:
 Building and starting mavlink lora.
 
 ```
-cd ../catkin_ws/
+cd Gazebo/catkin_ws/
 ```
 
 ```
@@ -60,6 +61,9 @@ source devel/setup.bash
 ```
 roslaunch mavlink_lora mavlink_lora_sim.launch
 ```
+
+You should now be able to communicate to Gazebo and the iris via the mavlink_lora tool.
+
 
 If any issues appears, please contact me on Chmik13@student.sdu.dk with your error.
 
