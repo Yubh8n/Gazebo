@@ -56,6 +56,7 @@ target_sys = 0 # reset by first message
 target_comp = 0
 current_lat = 0 #55.057883
 current_lon = 0 #10.569678
+
 current_alt = 0
 pos_received = False
 land_sent = False
