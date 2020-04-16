@@ -6,4 +6,4 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
 cd ..
 
-roslaunch px4 posix_sitl.launch 
+roslaunch px4 posix_sitl_cust.launch
