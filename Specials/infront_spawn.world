@@ -1,15 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
   <world name="default">
-    <wind>
-    <linear_velocity>110 100 0</linear_velocity> <!-- Wind linear velocity -->
-    </wind>
-
-    <model name="model">
-    <link name="link">
-      <wind>True</wind>
-    </link>
-    </model>
     <!-- A global light source -->
     <include>
       <uri>model://sun</uri>
@@ -23,11 +14,10 @@
     </include>
     <include>
 
-
       <!-- The marker -->
       <uri>model://aruco_marker</uri>
       <!-- Marker position -->
-      <pose>-5 10 2.5 0 1.59 3.14</pose>
+      <pose>5 0 2.5 0 1.59 0</pose>
 
     </include>
     <physics name='default_physics' default='0' type='ode'>
