@@ -10,7 +10,7 @@ material vrc/marker
 
 			texture_unit
 			{
-				texture hello.png
+				texture board.png
 				filtering anistropic
 				max_anisotropy 16
 			}
