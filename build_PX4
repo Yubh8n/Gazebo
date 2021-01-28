@@ -1,4 +1,9 @@
 #! /bin/bash
+cd PX4-Autopilot
+make clean &&
+make px4_sitl gazebo
 cp -rf copy-folder/launch PX4-Autopilot/
 cp -rf copy-folder/models PX4-Autopilot/Tools/sitl_gazebo
 cp -rf copy-folder/worlds PX4-Autopilot/Tools/sitl_gazebo
+make clean
+make px4_sitl gazebo
