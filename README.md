@@ -5,7 +5,7 @@ git submodule update --recursive
 ```
 
 ```
-./PX4_Autopilot/Tools/setup/ubuntu.sh
+./PX4-Autopilot/Tools/setup/ubuntu.sh
 ```
 
 ```
