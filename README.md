@@ -5,7 +5,7 @@ git clone https://github.com/Yubh8n/Gazebo.git
 ```
 
 ```
-pip install jinja2 catkin_pkg pyyaml empy toml numpy
+pip install jinja2 catkin_pkg pyyaml empy toml numpy packaging
 ```
 ```
 cd Gazebo/
