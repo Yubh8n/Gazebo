@@ -1,73 +1,13 @@
 Installation guide:
-
-```
-git clone https://github.com/Yubh8n/Gazebo.git
-```
-
-```
-pip install jinja2 catkin_pkg pyyaml empy toml numpy packaging
-```
-```
-./PX4_Autopilot/Tools/setup/ubuntu.sh
-```
-```
-cd Gazebo/
-```
-
 ```
 git submodule init
 git submodule update --recursive
 ```
-```
-cd Firmware/
-```
-
-After you make first time, gazebo will start up, just ctrl+c the command window to close this down, and keep on with the installation.
-```
-make px4_sitl_default gazebo
-```
-```
-source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/posix_sitl_default
-```
-```
-export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)
-```
-```
-  export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
-```
-
 
 ```
-socat -d -d pty,raw,echo=0,link=/tmp/ttyV5 pty,raw,echo=0,link=/tmp/ttyV6 &
-socat -d udp4-listen:14540 open:/tmp/ttyV5,raw,nonblock,waitlock=/tmp/s0.locak,echo=0,b921600,crnl &
+./PX4_Autopilot/Tools/setup/ubuntu.sh
 ```
 
 ```
-roslaunch px4 posix_sitl.launch
+./build_PX4
 ```
-
-
-In a new terminal:
-Building and starting mavlink lora.
-
-```
-cd Gazebo/catkin_ws/
-```
-
-```
-catkin build
-```
-```
-source devel/setup.bash
-```
-
-```
-roslaunch mavlink_lora mavlink_lora_sim.launch
-```
-
-You should now be able to communicate to Gazebo and the iris via the mavlink_lora tool.
-
-
-If any issues appears, please contact me on Chmik13@student.sdu.dk with your error.
-
-Or write a issue post under issues.
